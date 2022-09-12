@@ -1,0 +1,158 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    padding: 0px 15px;
+    width: 600px;
+    margin: auto;
+}
+@media screen (min-width:760px) {
+    .container{
+        width: 750px;
+    }
+    
+}
+@media screen (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+    
+}
+@media screen (min-width:760    px) {
+    .container{
+        width: 750px;
+    }
+    
+}
+
+/* start header */
+.header{
+    padding: 20px 20px 0px 20px;
+
+}
+.header .container{
+   
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.header .logo {
+    width: 60px;
+}
+.header .links{
+    position: relative;
+    justify-content:    ;
+}
+
+
+.header .links .icon {
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: end;
+}
+
+.header .links .icon span {
+    background-color: black;
+    margin: 3px;
+    
+}
+.header .links .icon span:first-child{
+    height: 3px;
+    width: 100%;
+
+}
+.header .links .icon span:nth-child(2){
+    height: 3px;
+    width: 50%;
+
+
+}
+.header .links .icon span:last-child{
+    height: 3px;
+    width: 100%;
+ 
+}
+
+/* End header */
+.header .links .icon span:nth-child(2):hover{
+
+   transition-duration: .75s;   
+   width: 100%;
+}
+.header  .container .links ul{
+    display: none;
+    margin: 0;
+    background-color: rgb(249 249 249);
+    width: fit-content;
+    height: fit-content;
+    border: white solid 1px;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    right: 0;
+    width: 181px;
+    top: 33px;
+    transition: .3s;
+}
+.header  .container .links ul::before{
+    top: -20px;
+    border: solid;
+    position: absolute;
+    right: 0px;
+    border-color: transparent transparent #f9f9f9 transparent;
+    content: " ";
+    border-width: 10px;
+
+}
+.header  .container .links ul li a{
+    display: block;
+    padding: 9px 11px;
+    text-decoration: none;
+    color: #141010f7;
+    transition: .75s;
+
+
+}
+.header  .container .links ul li a:hover{
+
+   padding-left: 25px;
+   display: ;
+
+}
+hr{
+    background: #ffffff;
+}
+.header  .container .links:hover ul{
+    
+    display: block;
+}
+.landing{
+    background-image: url(image/mon.jpg);
+     background-size: cover;
+     height: 100vh;
+
+}
+.landing .title1{
+    position: absolute;
+    top: 22%;
+    left: 38%;
+    font-size: 48px;
+    color: #00ffdb;
+
+}
+.landing .title2{
+    position: absolute;
+    top: 31%;
+    left: 27%;
+    font-size: 18px;
+    
+}
